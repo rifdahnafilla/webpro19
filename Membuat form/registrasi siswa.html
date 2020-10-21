@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title> Registrasi siswa</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+<form action="proses.php" method="POST">
+<fieldset id="Personal_information">
+<legend>PERSONAL INFOMATION</legend>
+<table>
+    <tr>
+        <td>NAME</td>
+        <td><input type="text" name="name" id="name"></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>DATE OF BIRTH</td>
+        <td><input type="date" name="dateof_birth" id="dateof_birth" value="1995-01-01"></td>
+    </tr>
+</table>
+<br> <br> 
+<form action="proses.php" method="POST"></form>
+    <fieldset id="course_information">
+    <legend>CONTACT INFOMATION</legend>
+<table>
+     <tr>
+        <td>ADDRESS</td>
+        <td><input type="text" name="adrres" id="adrres"></td>
+     </tr>
+ </table>
+<table>
+    <td>
+        <tr>
+            <td>CITY</td>
+            <td><input type="text" name="city" id="city"></td>
+            <td>PROVINCE/STATE</td>
+            <td><input type="text" name="province_state" id="province_state"></td>
+        </tr>
+    </td>
+</table>
+<table>
+        <td>
+            <tr>
+                <td>ZIP CODE</td>
+                <td><input type="text" name="zip_code" id="zip_code"></td>
+                <td>COUNTRY</td>
+                <td><input type="text" name="coutry" id="coutry"></td>
+            </tr>
+        </td>
+    </table>
+<table>
+        <td>
+            <tr>
+                <td>PHONE</td>
+                <td><input type="phone" name="phone" id="phone"></td>
+                <td>EMAIL</td>
+                <td><input id="EMAIL" type="text"required name="Email" placeholder="use@example.com"></td>
+             </tr>
+        </td>
+ <table>
+         <td>
+            <tr>
+                <td>MEMBERSHIP TYPE</td>
+                <td><input type="radio" name="membership_type" value="reguler" checked>Reguler</td>
+                <td><input type="radio" name="membership_type" value="premium" checked>Premium</td>
+                <td><input type="radio" name="membership_type" value="vip" checked>Vip</td>
+          
+            </tr>
+        </td>
+</table>
+<br> <br> 
+<form action="proses.php" method="POST"></form>
+    <fieldset id="course_information">
+    <legend>COURSE INFOMATION</legend>
+<table>
+     <tr>
+        <td>COURSE NAME</td>
+        <td><input type="text" name="course_name" id="course_name"></td>
+     </tr>
+ </table>
+ <table>
+        <td>
+           <tr>
+               <td>PAYMENT DETAILS</td>
+               <td><input type="radio" name="payment_details" value="cash" checked>Cash</td>
+               <td><input type="radio" name="payment_details" value="cheque" checked>Cheque</td>
+               <td><input type="radio" name="payment_details" value="credit_card" checked>Credit Card</td>
+         
+           </tr>
+       </td>
+</table>
+<table>
+        <tr>
+           <td>COURSE NAME</td>
+           <td><input type="text" name="course_name" id="course_name"></td>
+        </tr>
+    </table>
+</fieldset>
+</form>
+</body>
