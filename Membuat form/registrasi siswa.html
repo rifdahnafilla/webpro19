@@ -2,14 +2,15 @@
 <head>
     <title> Registrasi siswa</title>
 </head>
-<body>
+<body bgcolor="bisque">
 <table>
-         <tr>
-            <td>
-                <h2>Student Registration Form</h2>
-        </td>
-            <td>DATE</td>
-            <td><input type="date" name="dateof_birth" id="dateof_birth" value="2020-01-01"></td>
+<tr>
+    <td>
+        <h2>Student Registration Form</h2>
+    </td>  
+    <td width="500px"></td>  
+    <td>DATE</td>
+    <td><input type="date" name="date" id="date" value="2020-01-01"></td>
         </tr>
 </table>
 <form action="proses.php" method="POST">
@@ -30,7 +31,7 @@
 <br> <br> 
 <form action="proses.php" method="POST"></form>
     <fieldset id="course_information">
-    <legend>CONTACT INFOMATION</legend>
+    <legend>CONTACT INFORMATION</legend>
 <table>
      <tr>
         <td>ADDRESS</td>
@@ -42,6 +43,7 @@
         <tr>
             <td>CITY</td>
             <td><input type="text" name="city" id="city"></td>
+            <td width="500px"></td> 
             <td>PROVINCE/STATE </td>
             <td><input  type="text" name="province_state" id="province_state"></td>
         </tr>
@@ -52,6 +54,7 @@
             <tr>
                 <td>ZIP CODE</td>
                 <td><input type="text" name="zip_code" id="zip_code"></td>
+                <td width="500px"></td>
                 <td>COUNTRY</td>
                 <td><input type="text" name="coutry" id="coutry"></td>
             </tr>
@@ -62,6 +65,7 @@
             <tr>
                 <td>PHONE</td>
                 <td><input type="phone" name="phone" id="phone"></td>
+                <td width="500px"></td>
                 <td>EMAIL</td>
                 <td><input id="EMAIL" type="text"required name="Email" placeholder="use@example.com"></td>
              </tr>
@@ -80,7 +84,7 @@
 <br> <br> 
 <form action="proses.php" method="POST"></form>
     <fieldset id="course_information">
-    <legend>COURSE INFOMATION</legend>
+    <legend>COURSE INFORMATION</legend>
 <table>
      <tr>
         <td>COURSE NAME</td>
@@ -104,6 +108,16 @@
            <td><input type="text" name="course_name" id="course_name"></td>
         </tr>
     </table>
+<form action="proses.php" method="POST"></form>
+    <fieldset id="course_information">
+    <legend>COMMENTS</legend>
+<table>
+        <tr>
+           <td><input type="text" name="Student_Signature" id="Student_Signature" placeholder="STUDENTS SIGNATURE"></td>
+           <td><input type="text" name="Validated_By" id="Validated_By" placeholder="VALIDATED BY"></td>
+        </tr>
+    </table>
+
 </fieldset>
 </form>
 </body>
